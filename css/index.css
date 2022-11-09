@@ -178,6 +178,8 @@ h3 {
 p,
 a {
     font-size: 3rem;
+    color: white;
+    text-decoration: none;
 }
 
 /* Wrapper */
@@ -341,6 +343,7 @@ header nav a {
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 4, 17, .8);
+    color: white;
 }
 
 .about h2 {
@@ -349,6 +352,11 @@ header nav a {
 
 .about-container .text {
     width: 50%;
+}
+
+.spacer:nth-of-type(2) {
+    background: rgb(45, 123, 187);
+    height: 100px;
 }
 
 /* contact us section */
@@ -369,14 +377,19 @@ header nav a {
 
 .contact h2 {
     padding-top: 5vh;
+    color: white;
 }
 
 .contact h3 {
     padding-top: 2.5vh;
+    color: white;
+    font-size: 3rem;
 }
 
-.contact p {
+.contact p, #email, #phone {
     padding: .5vh 0;
+    color: white;
+    font-size: 2rem;
 }
 
 .info {
@@ -456,8 +469,29 @@ footer {
 
     /* footer section */
     footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        background: black;
+    }
+
+    footer input, footer button {
+        padding: 10px;
+        margin: 10px;
+        width: 380px;
+    }
+
+    footer a {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 1.3rem;
+        padding: 3rem;
     }
 }
